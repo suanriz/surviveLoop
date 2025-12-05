@@ -1,4 +1,4 @@
-# [Survive Loop 人生迴圈 🍗](https://suanriz.github.io/surviveLoop/)
+# [Survive Loop (人生迴圈) 🍗](https://suanriz.github.io/surviveLoop/)
 
 <img src="https://github.com/suanriz/surviveLoop/blob/master/docs/introduce.gif"/> 👉[full ver](https://www.youtube.com/watch?v=jMgzsZBVADE)
 
