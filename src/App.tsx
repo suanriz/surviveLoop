@@ -85,7 +85,7 @@ const App = () => {
         target='_blank'
         rel='noreferrer'
       >
-        <img src={githubMark} />
+        <img src={githubMark} alt='github' />
       </a>
     </>
   )

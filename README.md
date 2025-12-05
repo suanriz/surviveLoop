@@ -1,6 +1,6 @@
-# [Survive Loop (人生迴圈) 🍗](https://suanriz.github.io/surviveLoop/)
+# [Survive Loop 人生迴圈 🍗](https://suanriz.github.io/surviveLoop/)
 
-<img src="https://github.com/suanriz/surviveLoop/blob/master/public/introduce.gif"/> 👉[full ver](https://www.youtube.com/watch?v=jMgzsZBVADE)
+<img src="https://github.com/suanriz/surviveLoop/blob/master/docs/introduce.gif"/> 👉[full ver](https://www.youtube.com/watch?v=jMgzsZBVADE)
 
 > 「幸運排行？首先要活著...」  
 > 一個關於焦慮、生存與運氣的 React 點擊實驗。

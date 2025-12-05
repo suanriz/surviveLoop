@@ -92,6 +92,7 @@ export default [
           'caseInsensitive': true
         }
       }],
+      'eol-last': ['error', 'always'],
     },
   },
   {

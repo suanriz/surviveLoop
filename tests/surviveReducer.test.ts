@@ -1,8 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
 import { MAX_LV } from '@/lib/constants'
-
-import { surviveReducer, initState } from './surviveReducer'
+import { surviveReducer, initState } from '@/reducers/surviveReducer'
 
 describe('surviveReducer', () => {
   it('should handle WORRY action correctly', () => {
