@@ -70,6 +70,7 @@ const WinRankModel: React.FC<WinRankModelPropsType> = ({
                   maxLength={5}
                   required
                   className='!bg-white border-0 border-b-1 rounded-none max-w-[10em] shadow-none'
+                  aria-label='輸入名字'
                 />
               </Field>
               <Field orientation='responsive'>

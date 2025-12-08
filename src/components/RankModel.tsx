@@ -32,7 +32,7 @@ const RankModel: React.FC<RankModelProps> = ({ rankData, rankOpen, setRankOpen }
           <thead>
             <tr className='bg-gray-100'>
               {RANK_COLUMNS.map(col => (
-                <th key={col.key} className='px-4 py-3 text-center font-bold'>
+                <th key={col.key} className='px-4 py-3 text-center font-bold' scope='col'>
                   {col.label}
                 </th>
               ))}

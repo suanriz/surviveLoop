@@ -93,6 +93,9 @@ export default [
         }
       }],
       'eol-last': ['error', 'always'],
+      'indent': ['error', 2, { 'SwitchCase': 1 }],
+      'react/jsx-indent': ['error', 2],
+      'react/jsx-indent-props': ['error', 2],
     },
   },
   {

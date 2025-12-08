@@ -53,14 +53,14 @@ const SurviveModel: React.FC<{ state: SurviveStateType, worry: () => void, close
         <DialogDescription className='hidden' />
         <div className='bg-gray-100 rounded-b-lg px-2 py-3 overflow-auto'>
           {steps.length > 0
-            ? <div className='grid grid-cols-4 gap-4'>
+            ? <ol className='grid grid-cols-4 gap-4 p-0 m-0 list-none'>
               {steps.map((step, index) => (
-                <div key={index} className='flex items-center justify-center'>
-                  <span className={`${step === 0 ? 'bg-green-600' : 'bg-gray-400'} relative w-[22px] h-[18px] leading-[18px] rounded-md mr-2 text-xs text-white text-center before:content-[attr(data-index)]`}>{steps.length - index}</span>
+                <li key={index} className='flex items-center justify-center'>
+                  <span className={`${step === 0 ? 'bg-green-600' : 'bg-gray-600'} relative w-[22px] h-[18px] leading-[18px] rounded-md mr-2 text-xs text-white text-center before:content-[attr(data-index)]`}>{steps.length - index}</span>
                   <span className={`${step === 0 && 'text-green-600'}`} >{WORRY_STEP[step as WorryStepTypeKeys]}</span>
-                </div>
+                </li>
               ))}
-            </div>
+            </ol>
             : <p className='text-center text-lg'>薛定諤 /ᐠ - ˕ -マ</p>
           }
         </div>

@@ -13,7 +13,7 @@ export const MAX_LV = WORRY_STEP.length - 1
 
 export const WORRY_DETAIL = {
   '0': {
-    message: '你真是地獄非洲人，煩惱多到能開實境節目 🤷🏿‍♂️',
+    message: '你真是地獄非洲人，隨手一抽就是直達油鍋的單程票 🤷🏿‍♂️',
     achievement: '人生下限體驗師',
     probability: '3.11'
   },

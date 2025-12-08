@@ -20,10 +20,12 @@ const AchievementList: React.FC<{ unlockedIds: string[] }> = ({ unlockedIds }) =
           <Tooltip key={key}>
             <TooltipTrigger asChild>
               <span
-                className={`text-xs px-2 py-1 rounded ${isUnlocked(key)
+                tabIndex={0}
+                className={`text-xs px-2 py-1 rounded cursor-default focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 ${isUnlocked(key)
                   ? 'bg-green-600 text-white'
                   : 'bg-gray-300 text-gray-600'
-                  }`}
+                }`}
+                aria-label={isUnlocked(key) ? `成就: ${detail.achievement}` : '成就鎖定'}
               >
                 {isUnlocked(key) ? '🏆' : '🔒'} {isUnlocked(key) ? detail.achievement : `${key}% - ${parseInt(key) + 10}%`}
               </span>
