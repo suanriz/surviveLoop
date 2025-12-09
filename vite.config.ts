@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import react from
   '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import viteCompression from 'vite-plugin-compression'
 
 // eslint-disable-next-line no-undef
 const isDev = process.argv.includes('dev') || process.env.NODE_ENV === 'development'
@@ -11,7 +12,22 @@ const isDev = process.argv.includes('dev') || process.env.NODE_ENV === 'developm
 // https://vite.dev/config/
 export default defineConfig({
   base: isDev ? '/' : '/surviveLoop',
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    viteCompression({
+      algorithm: 'gzip',
+      ext: '.gz',
+      threshold: 10240,
+      deleteOriginFile: false,
+    }),
+    viteCompression({
+      algorithm: 'brotliCompress',
+      ext: '.br',
+      threshold: 10240,
+      deleteOriginFile: false,
+    }),
+  ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
