@@ -13,8 +13,11 @@ const App = () => {
 
   return (
     <>
-      <section className='min-w-full h-full flex flex-col items-center justify-center p-4'>
-        <h1 className='sr-only'>Survive Loop 人生迴圈</h1>
+      <header className='sr-only'>
+        <h1>人生迴圈 - 擔心模擬器</h1>
+      </header>
+
+      <main className='min-w-full h-full flex flex-col items-center justify-center p-4'>
         {
           lv === MAX_LV && (
             <Suspense fallback={null}>
@@ -31,7 +34,7 @@ const App = () => {
           worry={worry}
           close={close}
         />
-      </section>
+      </main>
       <a
         className='absolute bottom-2 right-2 w-10 opacity-20 hover:opacity-100 z-100'
         href='https://github.com/suanriz/surviveLoop'
@@ -41,6 +44,10 @@ const App = () => {
       >
         <img src={githubMark} alt='github' />
       </a>
+
+      <footer className='sr-only'>
+        <p>Copyright © {new Date().getFullYear()} Survive Loop</p>
+      </footer>
     </>
   )
 }

@@ -2,6 +2,7 @@ import js from '@eslint/js'
 import tsPlugin from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
 import importPlugin from 'eslint-plugin-import'
+import a11y from 'eslint-plugin-jsx-a11y'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
@@ -33,6 +34,7 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       '@typescript-eslint': tsPlugin,
+      'jsx-a11y': a11y,
       import: importPlugin,
     },
     settings: {
@@ -40,6 +42,7 @@ export default [
       'import/resolver': { typescript: true, node: true },
     },
     rules: {
+      ...a11y.configs.recommended.rules,
       ...js.configs.recommended.rules,
       ...tsPlugin.configs.recommended.rules,
       ...react.configs.recommended.rules,

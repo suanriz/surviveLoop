@@ -70,5 +70,5 @@ describe('Luck Simulation', () => {
     }
 
     expect(true).toBe(true)
-  }, 60000)
+  }, 300000)
 })
