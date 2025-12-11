@@ -17,9 +17,9 @@
 ## 🛠️ 技術棧 (Tech Stack)
 
 - **核心框架**: React 19, TypeScript, Vite
-- **狀態管理**: TanStack Query + IndexedDB
+- **狀態管理**: TanStack Query + createAsyncStoragePersister
 - **後端服務**: Firebase Realtime Database
-- **樣式設計**: TailwindCSS, Shadcn/ui
+- **樣式設計**: TailwindCSS 4, Shadcn/ui
 - **代碼管理**: ESLint 9
 <br/>
 
