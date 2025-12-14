@@ -13,10 +13,6 @@ const App = () => {
 
   return (
     <>
-      <header className='2ext-xl text-white absolute -z-1'>
-        <h1>人生迴圈 - 擔心模擬器</h1>
-      </header>
-
       <main className='min-w-full h-full flex flex-col items-center justify-center p-4'>
         {
           lv === MAX_LV && (
@@ -44,6 +40,10 @@ const App = () => {
       >
         <img src={githubMark} width={40} height={39} fetchPriority='high' loading='eager' decoding='async' alt='github' />
       </a>
+
+      <header className='text-2xl text-white absolute top-0 pointer-events-none select-none opacity-0'>
+        <h1>人生迴圈 - 擔心模擬器</h1>
+      </header>
 
       <footer className='sr-only'>
         <p>Copyright © {new Date().getFullYear()} Survive Loop</p>
