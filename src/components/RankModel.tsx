@@ -50,7 +50,7 @@ const RankModel: React.FC<RankModelProps> = ({ rankData, rankOpen, setRankOpen }
                     )}
                     {col.key !== 'wisdom' && item[col.key as keyof RankDataType]}
                     {col.key === 'wisdom' && (
-                      <span className='text-green-600 font-medium'>
+                      <span className='text-green-700 font-medium'>
                         {item.wisdom.toFixed(2)}<small>%</small>
                       </span>
                     )}

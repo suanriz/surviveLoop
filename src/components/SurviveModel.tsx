@@ -32,7 +32,7 @@ const SurviveModel: React.FC<{ state: SurviveStateType, worry: () => void, close
       <DialogContent className='[&>button]:hidden h-[30%] grid-rows-[auto_1fr]'>
         <DialogHeader>
           <DialogTitle className='flex items-center justify-between flex-wrap'>
-            <span className={`text-xl leading-9 ${lv === 0 && 'text-green-600'}`}>
+            <span className={`text-xl leading-9 ${lv === 0 && 'text-green-700'}`}>
               {steps.length === 0
                 ? '介於健康與生病之間'
                 : `(${count}) ${lv === 0 ? '沒什麼好擔心' : WORRY_STEP[lv as WorryStepTypeKeys]}`
@@ -56,8 +56,8 @@ const SurviveModel: React.FC<{ state: SurviveStateType, worry: () => void, close
             ? <ol className='grid grid-cols-4 gap-4 p-0 m-0 list-none'>
               {steps.map((step, index) => (
                 <li key={index} className='flex items-center justify-center'>
-                  <span className={`${step === 0 ? 'bg-green-600' : 'bg-gray-600'} relative w-[22px] h-[18px] leading-[18px] rounded-md mr-2 text-xs text-white text-center before:content-[attr(data-index)]`}>{steps.length - index}</span>
-                  <span className={`${step === 0 && 'text-green-600'}`} >{WORRY_STEP[step as WorryStepTypeKeys]}</span>
+                  <span className={`${step === 0 ? 'bg-green-700' : 'bg-gray-600'} relative w-[22px] h-[18px] leading-[18px] rounded-md mr-2 text-xs text-white text-center before:content-[attr(data-index)]`}>{steps.length - index}</span>
+                  <span className={`${step === 0 && 'text-green-700'}`} >{WORRY_STEP[step as WorryStepTypeKeys]}</span>
                 </li>
               ))}
             </ol>

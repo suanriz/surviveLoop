@@ -21,7 +21,7 @@ const AchievementList: React.FC<{ unlockedIds: string[] }> = ({ unlockedIds }) =
             <TooltipTrigger asChild>
               <button
                 className={`!text-xs !px-2 !py-1 !rounded !border-0 cursor-default focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 ${isUnlocked(key)
-                  ? 'bg-green-600 text-white'
+                  ? 'bg-green-700 text-white'
                   : 'bg-gray-300 text-gray-600'
                 }`}
                 aria-label={isUnlocked(key) ? `成就: ${detail.achievement}` : '成就鎖定'}

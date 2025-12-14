@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-      <header className='sr-only'>
+      <header className='2ext-xl text-white absolute -z-1'>
         <h1>人生迴圈 - 擔心模擬器</h1>
       </header>
 
@@ -42,7 +42,7 @@ const App = () => {
         rel='noreferrer'
         aria-label='GitHub Repository'
       >
-        <img src={githubMark} alt='github' />
+        <img src={githubMark} width={40} height={39} fetchPriority='high' loading='eager' decoding='async' alt='github' />
       </a>
 
       <footer className='sr-only'>
