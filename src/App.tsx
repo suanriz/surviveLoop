@@ -45,7 +45,7 @@ const App = () => {
         <h1>人生迴圈 - 擔心模擬器</h1>
       </header>
 
-      <footer className='sr-only'>
+      <footer className='absolute top-0 pointer-events-none select-none opacity-0'>
         <p>Copyright © {new Date().getFullYear()} Survive Loop</p>
       </footer>
     </>
