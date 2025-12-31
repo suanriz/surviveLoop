@@ -14,6 +14,16 @@
 - **進來就能玩**：無感匿名登入，重整依然記得你。
 <br/>
 
+## 🏆 PageSpeed 100 分成就 (PageSpeed 100 Score)
+
+本專案 **達成 PageSpeed 滿分**，Performance、Accessibility、Best Practices 與 SEO 均為 100 分，充分展現前端效能與最佳實踐。  
+不僅 UI 流暢、互動即時，也兼顧 SEO 與響應式設計，完整呈現遊戲體驗的趣味性與性能優化。  
+<img width="320" src="https://github.com/suanriz/surviveLoop/blob/master/docs/surviveLoopScore-phone.png"/>
+<img width="320" src="https://github.com/suanriz/surviveLoop/blob/master/docs/surviveLoopScore-pc.png"/>
+<br/>
+<br/>
+<br/>
+
 ## 🛠️ 技術棧 (Tech Stack)
 
 - **核心框架**: React 19, TypeScript, Vite
@@ -23,9 +33,9 @@
 - **代碼管理**: ESLint 9
 <br/>
 
-## 🚀 1,000,000 次測試報告 (1,000,000 Trials Probability Report)
+## ‼️ 幸運值機率全揭露 (Probability Distribution – Full Disclosure)
 
-本地執行 `yarn test` 印出測試機率分布，`SIMULATION_TIMES`可調整測試次數。
+本地執行 `yarn test`，進行 **1,000,000 次模擬**，將幸運值分布完整攤開，驗證遊戲機制的隨機性與合理性。
 
 | 幸運值區間  | 次數       | 百分比     | 長條圖                                  |
 |------------|------------|------------|----------------------------------------|
